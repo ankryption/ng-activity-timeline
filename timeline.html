@@ -1,0 +1,41 @@
+<section class="timeline">
+    <ul class="t-list">
+        <li class="t-item" ng-click="showOptions(item)" ng-repeat="item in data track by $index">
+            <div class="col col-25 text-center col-icon">
+                <!-- ACTIVITY ICONS -->
+                    <div class="action-icon-container">
+                      <img src="https://img.icons8.com/ios/20/000000/restart.png">
+                    </div>
+                </span>
+            </div>
+            <div class="col col-card">
+                <!-- TITLE -->
+                <div class="section">
+                    <div class="body-text">
+                        TITLE
+                    </div>
+                </div>
+                <!-- ACTIVITY DESCRIPTION -->
+                <div class="section">
+                    <span class="badge bottle-badge resolved-badge" ng-if="true">
+                        BADGE
+                    </span>
+                    <span>
+                        <div class="heading-text" ng-if="true">
+                            DESCRIPTION
+                        </div>
+                        <div class="sub-heading-text-container" ng-if="item.BABY_FIRST_NAME && item.BABY_LAST_NAME">
+                            SUB DESCRIPTION
+                        </div>
+                    </span>
+                </div>
+                <!-- FOOTER SECTION -->
+                <div class="section">
+                    <div class="body-text">
+                        FOOTER SECTION
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>

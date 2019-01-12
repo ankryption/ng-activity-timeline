@@ -1,0 +1,112 @@
+.timeline .t-list .t-item {
+    display: flex;
+    padding-top: 48px;
+    align-items: center;
+    justify-content: space-between;
+}
+.timeline .t-list .t-item .col-icon {
+    display: flex;
+    justify-content: center;
+}
+.timeline .t-list .t-item .col-icon .action-icon-container {
+    width: 40px;
+    left: calc(30% - 22px);
+    height: 40px;
+    z-index: 9999;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    background: #fff;
+    position: absolute;
+}
+.timeline .t-list .t-item .col-icon .action-icon-container .action-icon {
+    display: flex;
+    font-size: 120%;
+    justify-content: center;
+    color: grey;
+}
+.timeline .t-list .t-item .col-icon:after {
+    content: '';
+    left: 30%;
+    width: 0px;
+    z-index: -1;
+    position: absolute;
+    padding-bottom: 275px;
+    transform: translateX(-50%);
+    border: 1px solid blue;
+}
+.timeline .t-list .t-item .col-card {
+    left: -40%;
+    padding: 8px 16px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid blue;
+    border-radius: 4px;
+    background: #fff;
+    top: 20%;
+}
+.timeline .t-list .t-item .col-card div {
+    color: black;
+}
+.timeline .t-list .t-item .col-card .section {
+    padding-top: 8px;
+    word-break: break-word;
+}
+.timeline .t-list .t-item .col-card .heading-text {
+    font-weight: 700;
+    padding-bottom: 2px;
+    word-break: break-word;
+    text-transform: uppercase;
+}
+.timeline .t-list .t-item .col-card .sub-heading-text-container {
+    display: flex;
+    font-size: 90%;
+    word-break: break-word;
+    text-transform: uppercase;
+    justify-content: flex-start;
+}
+.timeline .t-list .t-item .col-card .body-text {
+    font-size: 90%;
+    padding-bottom: 2px;
+    word-break: break-word;
+}
+.timeline .t-list .t-item .col-card .body-text:last-child {
+    padding: 0px;
+}
+.timeline .t-list .t-item .col-card .key {
+    margin-right: 8px;
+}
+.timeline .t-list .t-item .col-card:after {
+    content: '';
+    top: 50%;
+    width: 0;
+    height: 0;
+    right: 100%;
+    display: block;
+    margin-top: -8px;
+    position: absolute;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid blue;
+}
+.timeline .t-list .t-item:last-child {
+    padding-bottom: 16%;
+}
+.timeline .t-list .t-item:last-child .col-icon:after {
+    padding-bottom: 0px !important;
+}
+.timeline .badge {
+    margin: 4px;
+    top: -14px;
+    color: #fff;
+    right: -16px;
+    font-size: 12px;
+    padding: 4px 8px;
+    position: absolute;
+    border-radius: 4px;
+    background-color: blue;
+    text-transform: uppercase;
+}
